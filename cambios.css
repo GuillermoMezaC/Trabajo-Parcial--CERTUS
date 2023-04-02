@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+html{
+    background-color:#d4f0fc;
+}
+header{
+    background-image: url(sources/backgr.webp);
+}
+header > h1 { /*Estilo de título*/
+    color : #02a9f7;
+    font-size: 4em;
+    font-family:'Audiowide', cursive;
+    margin:0px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: text 5s linear infinite;
+}
+@keyframes text { /*animación de fotograma anterior (H1)*/
+    0% {
+        filter: hue-rotate(0deg)
+    } 
+    100%{
+        filter:hue-rotate(360deg)
+    }
+
+}
+nav > li{
+    margin: 0px;
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+
+}
+nav > li:hover{
+    background-color:#89d6fb;
+}
+h1{ /*Cambio de tamaño y colo de h1 para una mayor visibilidad*/
+    Color:#01303f;
+    font-size: 3em;
+}
+h2{
+    color : #02a9f7;
+    font-size: 2em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    margin:0px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+label{
+    font-size: 1.5em;
+}
+input{
+    font-size: 1.5em;
+}
+option#compra{
+    font-size: 1.5em;
+}
+
+main{
+    text-align: center; /*Posición del texto*/
+}

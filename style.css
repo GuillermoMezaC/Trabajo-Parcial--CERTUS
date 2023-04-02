@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=PT+Sans+Narrow&display=swap');
+html{
+    background-color: #89d6fb;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif 
+}
+
+header{
+    background-image: url(sources/backgr.webp);
+}
+header > h1 { /*Estilo de título*/
+    color : #02a9f7;
+    font-size: 4em;
+    font-family:'Audiowide', cursive;
+    margin:0px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: text 5s linear infinite;
+}
+@keyframes text { /*animación de fotograma anterior (H1)*/
+    0% {
+        filter: hue-rotate(0deg)
+    } 
+    100%{
+        filter:hue-rotate(360deg)
+    }
+
+}
+body > p{
+    font-size: 1.3em; 
+}
+
+header > h2 { /*Cambio de fuente, color y tamaño*/
+    color : #02a9f7;
+    font-size: 2em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    margin:0px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+body > p{
+    color: #01303f;
+    text-align: center;
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color:#02a9f7;
+}
+nav > ul{
+    margin: 0px;
+    background-color: white;
+    text-align: center;
+}
+
+nav > ul >li{ /*Cambios en la lista*/
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav > ul > li:hover{
+    background-color: #d4f0fc;
+}
+main{ /*Estilo para la parte principal*/
+    height: 24%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d4f0fc;
+}
+.oferta{
+    color:tomato; /*cambiar color del descuento*/
+    text-decoration: line-through;
+}
+
+article{
+    max-width: 250px;
+    min-height: 200px;
+    display:inline-block;
+    border: black groove;
+}

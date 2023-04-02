@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="cambios.css"/>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>COMPUTECH</h1> <!-- Titulo 1 -->
+        <h2>Tecnología a tu servicio</h2> <!-- Titulo 2 -->
+    </header>
+
+    <!--Navigation-->
+    <nav>
+        <li><a href="index.html">Volver atras</a></li><!--Anchor (a)-->
+    </nav>
+
+    <!--Cuerpo Principal-->
+    <main>
+
+        <!--Formulario de contacto-->
+        <section id="forContacto">
+            
+            <h1>Escríbenos Ahora</h1>
+            
+            <!--Formulario-->
+            <form action="ContactoRegistro.html" method="post">  
+
+                <!--Input / Entrada de valor-->
+                <div>
+                    <label for="txtName">Ingrese su nombre</label><!--Ingresar datos personales / Nombre-->
+                    <input type="text" name="txtName" id="txtName" maxlength="40"required>
+                </div>
+                <br>
+                <div>
+                    <label for="txtLastName">Ingrese su Apellido</label><!--Ingresar datos personales / Apellido-->
+                    <input type="text" name="txtLastName" id="txtLastName" maxlength="40"  required>
+                </div>
+                <br>
+                <div>
+                    <label for="txtEmail">Ingrese su Email</label><!--Ingresar datos personales / Email-->
+                    <input type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength="100"  required>
+                </div>
+                <br>
+                <div>
+                    <label for="Numberphone">Ingrese su Número</label><!--Ingresar datos personales / Número de teléfono-->
+                    <input type="tel" name="Numberphone" id="Numberphone" minlength="7" maxlength="13"  required>
+                </div>
+                <br>
+
+                <!--Select / Selección de valor-->
+                <div>
+                    <!--Posibles asuntos por los cuales requieran atención-->
+                    <label for="txtAsunto">Seleccione el asunto</label>
+                    <select name="txtAsunto" id="txtAsunto">
+                        <option id="compra" value="">Seleccione asunto</option>
+                        <option value="compraMayor">Comprar productos por mayor</option>
+                        <option value="Consulta general">Hacer uso de garantía</option>
+                        <option value="Cambios y devoluciones">Realizar cambio o devolución</option>
+                    </select>
+                </div>
+
+                <!--TextArea / Cuerpo de texto-->
+<br>
+                <div>
+                    <label for="bodyDetalle">Ingrese su mensaje</label>
+                    <br>
+                    <textarea name="bodyDetalle" id="bodyDetalle" cols="50" rows="8"></textarea>
+                </div>
+
+                <!--Input Checkbox-->
+
+                <div>
+                    <input type="checkbox" name="bolAutorizo" id="bolAutorizo">
+                    <label form="bolAutorizo">Autorizo el envío de publicidad e información comercial</label><!--Confirmación para envío de publicidad-->
+                </div>
+
+                <!--Input Submit / Botón de enviar-->
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+
+                
+            </form>
+
+        </section>
+
+        <!--Datos de contacto-->
+        <section id="Ubicanos">
+            <p>Av. Javier Prado Este 2010, Lima 15036 (Interiores de CC. La Rambla)</p>
+            <p>Tel: 5702491 </p>
+            <p>Cel: 999 999 999</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.340129547111!2d-77.00735134970698!3d-12.088851591397258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7d40cf27c17%3A0x338468bfb2ffc786!2sCentro%20Comercial%20La%20Rambla!5e0!3m2!1sen!2spe!4v1680407893381!5m2!1sen!2spe" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+</body>
+</html>
